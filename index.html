@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 id="header">SCOREBOARD</h1>
+        <div id="container">
+        <div class="container-centre">
+            <h1>HOME</h1>
+            <textarea class="num-col" id="teama-el">0</textarea>
+        <div>
+            <button class="point-btn" onclick="teamaIncrease1()">+1</button>
+            <button class="point-btn" onclick="teamaIncrease2()">+2</button>
+            <button class="point-btn" onclick="teamaIncrease3()">+3</button>
+        </div>
+        </div>
+        <div class="container-centre">
+            <h1>AWAY</h1>
+            <textarea class="num-col" id="teamb-el">0</textarea>
+        <div>
+            <button class="point-btn" onclick="teambIncrease1()">+1</button>
+            <button class="point-btn" onclick="teambIncrease2()">+2</button>
+            <button class="point-btn" onclick="teambIncrease3()">+3</button>
+        </div>
+        </div>
+        </div>
+            <button id="newgame" onclick="reset()">END GAME</button>
+       
+        <script src="index.js"></script>
+    </body>
+</html>
